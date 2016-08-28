@@ -1,6 +1,14 @@
 // CORE DEPS
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MdCardModule } from '@angular2-material/card/card';
+import { MdInputModule } from '@angular2-material/input/input';
+import { MdButtonModule } from '@angular2-material/button/button';
+import { MdIconModule } from '@angular2-material/icon/icon';
+import { MdMenuModule } from '@angular2-material/menu/menu';
+import { MdTabsModule } from '@angular2-material/tabs/tabs';
+import { MdToolbarModule } from '@angular2-material/toolbar/toolbar';
+import { MdTooltipModule } from '@angular2-material/tooltip/tooltip';
 import { AngularFireModule, AuthMethods } from 'angularfire2';
 
 // APP
@@ -26,7 +34,15 @@ import { MovieGoer } from './components/moviegoer.component';
         method: AuthMethods.Redirect
       }
     ),
-    BrowserModule
+    BrowserModule,
+    MdButtonModule,
+    MdCardModule,
+    MdIconModule,
+    MdInputModule,
+    MdMenuModule,
+    MdTabsModule,
+    MdToolbarModule,
+    MdTooltipModule
   ],
   declarations: [
     AppComponent,
