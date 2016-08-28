@@ -9,12 +9,13 @@ import { Theater } from './components/theater.component';
 import { MovieGoer } from './components/moviegoer.component';
 
 // replace me with your config
-var config = {
-  apiKey: "AIzaSyAD44gPRzYXU3-NI0jmUpk78MQAj-P6zwM",
-  authDomain: "fir-workshop-fb35a.firebaseapp.com",
-  databaseURL: "https://fir-workshop-fb35a.firebaseio.com",
-  storageBucket: "fir-workshop-fb35a.appspot.com",
-};
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCJ75u2HQ0zjWeE8M0m1wnyHk4lVQc5Nbk",
+    authDomain: "fir-workshop-9aa8e.firebaseapp.com",
+    databaseURL: "https://fir-workshop-9aa8e.firebaseio.com",
+    storageBucket: "fir-workshop-9aa8e.appspot.com",
+  };
 
 @NgModule({
   imports: [

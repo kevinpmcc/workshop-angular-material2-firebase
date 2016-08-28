@@ -11,8 +11,8 @@ import { AngularFire, AuthProviders } from 'angularfire2';
         <input type="text" #newname placeholder="Name" />
         <input type="text" #age placeholder="Age" />
         <button (click)="save(newname.value, age.value)">Update your information</button>
-      </div> 
-      
+      </div>
+
       <h3>Selected movie</h3>
       <p class="movie-detail">
       Title : {{ (movie | async )?.name }}
@@ -70,6 +70,7 @@ export class MovieGoer {
       length : 146
     });
     this.movie = this.get( 'selected-movie' );
-
   }
+
+
 }
