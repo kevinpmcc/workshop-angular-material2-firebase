@@ -9,6 +9,7 @@ import { MdMenuModule } from '@angular2-material/menu/menu';
 import { MdTabsModule } from '@angular2-material/tabs/tabs';
 import { MdToolbarModule } from '@angular2-material/toolbar/toolbar';
 import { MdTooltipModule } from '@angular2-material/tooltip/tooltip';
+import { MdGridListModule } from '@angular2-material/grid-list/grid-list';
 import { AngularFireModule, AuthMethods } from 'angularfire2';
 
 // APP
@@ -42,7 +43,8 @@ import { MovieGoer } from './components/moviegoer.component';
     MdMenuModule,
     MdTabsModule,
     MdToolbarModule,
-    MdTooltipModule
+    MdTooltipModule,
+    MdGridListModule
   ],
   declarations: [
     AppComponent,

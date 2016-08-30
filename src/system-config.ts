@@ -60,7 +60,8 @@ const materialPkgs:string[] = [
   'menu',
   'tabs',
   'toolbar',
-  'tooltip'
+  'tooltip',
+  'grid-list'
 ];
 
 materialPkgs.forEach((pkg) => {

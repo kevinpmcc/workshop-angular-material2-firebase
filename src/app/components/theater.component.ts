@@ -2,18 +2,21 @@ import { Component } from '@angular/core';
 import { AngularFire, AuthProviders } from 'angularfire2';
 
 @Component({
+
   moduleId: module.id,
   selector: 'theater',
+
   template: `
     <h2>Movie theater</h2>
     <h3>Listing the seats</h3>
 
-    <li *ngFor="let item of list | async" (click)="book(item)">
-       Seat:{{ item.seat }} Booked:{{ item.booked }} Reserved:{{ item.reserved }}
-    </li>
+
     <div style="clear:both"></div>
-
-
+    <div>
+      <md-grid-list class="auditorium" cols="10" *ngFor="let item of list | async" (click)="book(item)">
+        <md-grid-tile >{{ item.seat }}</md-grid-tile>
+    </md-grid-list>
+    </div>
   `,
   styleUrls: ['theater.component.css']
 })

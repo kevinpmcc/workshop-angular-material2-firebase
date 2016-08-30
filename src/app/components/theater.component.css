@@ -38,14 +38,14 @@
   border-radius: 25%;
   background: -moz-linear-gradient(top, rgba(230,240,163,1) 0%, rgba(210,230,56,1) 50%, rgba(195,216,37,1) 51%, rgba(219,240,67,1) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
+background: linear-gradient(to bottom, rgba(230,240,163,1) 0%,rgba(210,230,56,1) 50%,rgba(195,216,37,1) 51%,rgba(219,240,67,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   opacity: 0.65;
   transition:  opacity 2.0s;
 }
 
 .movies .row .column:hover {
     opacity: 1;
-    
+
 }
 
 .movies .row .column .seat {
@@ -74,4 +74,42 @@ background: -webkit-linear-gradient(top, rgba(252,234,187,1) 0%,rgba(252,205,77,
 
 .movies .selected-seat {
     text-align: center;
+}
+
+.auditorium {
+    margin-top: 110%;
+    transition: margin-top 1000ms;
+}
+
+.auditorium.animate{
+    margin-top: 0;
+}
+
+.row{
+  position: relative;
+  left: -200%;
+  transition: left 1000ms;
+  transition-delay: 1000ms;
+}
+
+.row.animate {
+    left: 0;
+}
+
+.seat {
+  min-width: 70px;
+  margin: 0 5px 5px 0;
+  background-color: blue;
+}
+
+.seat:last-child {
+  margin-right: 0;
+}
+
+.booked {
+  background-color: #F44336;
+}
+
+.reserved {
+  background-color: #2196F3;
 }
